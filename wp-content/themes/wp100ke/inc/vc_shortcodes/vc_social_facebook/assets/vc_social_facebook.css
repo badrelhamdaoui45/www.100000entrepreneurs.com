@@ -1,0 +1,41 @@
+.centk-rs-facebook {
+    position: relative;
+    min-height: 350px;
+}
+
+.centk-rs-facebook .feed-scroller {
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.centk-rs-facebook>iframe {
+    display: block;
+}
+
+.centk-rs-facebook .video-consent-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #162f3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    color: white;
+}
+
+.centk-rs-facebook .video-consent-overlay-text {
+    text-align: center;
+}
+
+.centk-rs-facebook .video-consent-overlay-button {
+    margin: 20px 0 0 0;
+    padding: 19px 15px;
+    background-color: #1f5caa;
+    cursor: pointer;
+    font-weight: bold;
+}

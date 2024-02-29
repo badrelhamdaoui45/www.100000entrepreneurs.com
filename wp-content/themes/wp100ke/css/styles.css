@@ -1,0 +1,260 @@
+/* 
+    Created on : 20 févr. 2015, 17:50:46
+    Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+*/
+
+/** HT%ML **/
+
+main {
+    padding: 0;
+}
+
+.home main {
+    padding: 0;
+}
+
+/** Styles **/
+
+.container {
+    max-width: 960px;
+    width: 100%;
+}
+
+.main-page {
+    background-color: rgb(236, 239, 240);
+    padding: 10px 0 0 0;
+}
+
+.main-page-content {
+    background-color: #ffffff;
+}
+
+.no-photo {
+    width: 230px;
+    opacity: 0.2;
+}
+
+/** BLOG (POSTS) **/
+
+.blog-post .media-body {
+    padding: 0 0 0 20px;
+}
+
+.blog-post a {
+    color: #000000;
+}
+
+.blog-post a:hover,
+.blog-post a:focus {
+    text-decoration: none;
+}
+
+.blog-post h4 {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+}
+
+.blog-post span {
+    display: block;
+    color: rgb(105, 99, 99);
+    margin: 0 0 3px 0px;
+}
+
+.blog-post p {
+    margin: 0;
+}
+
+@media(max-width:650px) {
+    .blog-post .media-left,
+    .blog-post .media-body {
+        float: none;
+        max-width: 100%;
+        display: block;
+        padding: 0;
+    }
+    .blog-post .media-left {
+        text-align: center;
+        margin: 0 0 10px 0;
+    }
+    .blog-post .media-left img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/** BLOG (ONE POST) **/
+
+.blog-post-one figure {
+    margin: 0px 20px 0 0;
+}
+
+.blog-post-one .blog-post-one-info {
+    font-size: 12px;
+}
+
+.blog-post-one .blog-post-one-info a {
+    color: #555555;
+}
+
+/** PAGINATION **/
+
+.pagination {
+    margin: 0px 0 20px 0;
+    text-align: center;
+    display: block;
+}
+
+.pagination a,
+.pagination span {
+    margin: 0;
+    padding: 2px 7px 2px 7px;
+}
+
+.pagination a {
+    background-color: rgba(57, 57, 142, 1);
+    color: #ffffff;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+    text-decoration: none;
+}
+
+.pagination span.current {
+    border: 1px solid rgba(57, 57, 142, 1);
+    color: rgb(0, 137, 200);
+}
+
+/** CONTACT FORM **/
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    border-radius: 0;
+    border-color: #cee8f4;
+    box-shadow: none;
+    display: inline-block;
+    resize: none;
+    color: #999292;
+}
+
+.contact-form input[type=submit] {
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: rgba(57, 57, 142, 1);
+}
+
+.contact-form label {
+    display: none;
+}
+
+/** .formats-interventions **/
+
+.formats-interventions .wpb_text_column img {
+    width: 100%;
+    height: auto;
+}
+
+.formats-interventions .wpb_text_column h1,
+.formats-interventions .wpb_text_column h2,
+.formats-interventions .wpb_text_column h3,
+.formats-interventions .wpb_text_column h4,
+.formats-interventions .wpb_text_column h5,
+.formats-interventions .wpb_text_column h6 {
+    text-align: left;
+    font-size: 130%;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.formats-interventions .wpb_text_column hr {
+    border-color: #333333;
+    margin: 5px 0;
+}
+
+/** .wp-caption **/
+
+.wp-caption {
+    padding: 10px;
+}
+
+.wp-caption.alignright {
+    float: right;
+    padding-right: 0;
+}
+
+.wp-caption.alignleft {
+    float: left;
+    padding-left: 0;
+}
+
+.wp-caption.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    font-size: 80%;
+    font-style: italic;
+    text-align: center;
+}
+
+/* GravityForm */
+
+.gform_wrapper input,
+.gform_wrapper textarea {
+    border: 1px solid #cee9f4;
+    color: #333;
+    background: none;
+}
+
+.gform_wrapper select {
+    border: 1px solid #cee9f4;
+    background: #fff;
+    height: 32px;
+    border-radius: 0;
+    color: #afafaf;
+}
+
+.gform_wrapper input::placeholder,
+.gform_wrapper textarea::placeholder {
+    color: #afafaf;
+}
+
+.gform_wrapper input:-ms-input-placeholder,
+.gform_wrapper textarea:-ms-input-placeholder {
+    color: #afafaf;
+}
+
+.gform_wrapper input.gform_button {
+    background: #0289c8;
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gform_wrapper div.validation_error {
+    color: #d3741c !important;
+    border-top: 2px solid #d3741c !important;
+    border-bottom: 2px solid #d3741c !important;
+    padding: 16px 20px !important;
+}
+
+.page-id-967 .gform_wrapper label {
+    display: none !important;
+}
+
+.blog-post .media-left {
+    width: 40%;
+}
+
+@media (min-width: 650px) {
+    .blog-post .media-body {
+        width: 60%;
+    }
+}

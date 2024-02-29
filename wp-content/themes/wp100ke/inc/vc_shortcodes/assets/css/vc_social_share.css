@@ -1,0 +1,23 @@
+/**
+ * Created on : 09 juillet 2015, 10:45:05
+ * Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+**/
+
+.social-buttons {
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.social-buttons li {
+    margin: 0;
+    padding: 0 5px 0 0;
+    display: inline-block;
+}
+
+.social-buttons li .fb_iframe_widget span
+/* fix Facebook button */
+
+    {
+    display: block;
+}

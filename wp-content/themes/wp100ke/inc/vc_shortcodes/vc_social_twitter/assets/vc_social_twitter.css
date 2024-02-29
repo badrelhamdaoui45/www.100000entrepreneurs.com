@@ -1,0 +1,41 @@
+.centk-rs-twitter {
+    position: relative;
+    min-height: 350px;
+}
+
+.centk-rs-twitter .feed-scroller {
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+.centk-rs-twitter>iframe {
+    display: block;
+}
+
+.centk-rs-twitter .video-consent-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #162f3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+    color: white;
+}
+
+.centk-rs-twitter .video-consent-overlay-text {
+    text-align: center;
+}
+
+.centk-rs-twitter .video-consent-overlay-button {
+    margin: 20px 0 0 0;
+    padding: 19px 15px;
+    background-color: #1f5caa;
+    cursor: pointer;
+    font-weight: bold;
+}

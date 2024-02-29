@@ -1,0 +1,20 @@
+/**
+ * Created on : 9 juillet 2015, 18:37:51
+ * Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+**/
+
+.jvectormap-zoomout,
+.jvectormap-zoomin {
+    display: none;
+}
+
+.jvectormap-tip {
+    border: 0;
+    border-radius: 0;
+    background: #ffffff;
+    color: #474747;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 5px 10px;
+}

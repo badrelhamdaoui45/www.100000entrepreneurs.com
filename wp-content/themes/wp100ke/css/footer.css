@@ -1,0 +1,143 @@
+/** .bottom */
+
+.bottom {}
+
+.bottom>.container {
+    background-color: #ffffff;
+}
+
+.bottom>.row {
+    margin: 20px 0;
+}
+
+/** .wrapper-slider-partnership **/
+
+.wrapper-slider-partnership {
+    position: relative;
+    margin: 40px 0;
+}
+
+/** .partnership-controls **/
+
+.partnership-controls {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+@media(max-width: 992px) {
+    .partnership-controls {
+        display: none;
+    }
+}
+
+.partnership-controls #controls-prev {
+    position: absolute;
+    left: -42px;
+}
+
+.partnership-controls #controls-next {
+    position: absolute;
+    right: -50px;
+}
+
+.partnership-controls #controls-prev a,
+.partnership-controls #controls-next a {
+    text-indent: -9000px;
+    display: block;
+    height: 60px;
+    width: 35px;
+    background-repeat: no-repeat;
+}
+
+.partnership-controls #controls-prev a {
+    background-image: url("../images/slider-arrow-left.png");
+}
+
+.partnership-controls #controls-next a {
+    background-image: url("../images/slider-arrow-right.png");
+}
+
+/** .separator-footer **/
+
+hr.separator-footer {
+    margin: 0;
+    padding: 2px 0;
+    border: 0;
+}
+
+/** .footer **/
+
+.footer>.container {
+    background-color: #ffffff;
+}
+
+.footer .footer-part {
+    display: inline-block;
+    width: 19.6%;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+@media(max-width:991px) {
+    .footer .footer-part {
+        display: block;
+        width: 100%;
+    }
+}
+
+.footer .footer-part h2 {
+    background-color: rgba(57, 57, 142, 1);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: left;
+    margin: 0 0 10px 0;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+}
+
+.footer .footer-part ul {
+    padding: 0 0 0 20px;
+}
+
+.footer .footer-part ul li a {
+    font-size: 12px;
+    color: #000000;
+}
+
+/** .footer-social **/
+
+.footer .footer-social {
+    list-style: none;
+    padding: 0 0 5px 0;
+    margin: 0;
+    text-align: center;
+    background-color: #eceff0;
+    border-bottom: 2px solid #ffffff;
+}
+
+.footer .footer-social li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .footer-social li a {
+    color: rgba(57, 57, 142, 1);
+    font-size: 20px;
+}
+
+/** .footer-credits **/
+
+.footer .footer-credits {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: #eceff0;
+}
+
+.footer .footer-credits p {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,203 @@
+/**
+ * Created on : 1er juillet 2015, 18:13:08
+ * Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+**/
+
+/** .button-type-1 **/
+
+.button-type-1 {
+    /*height: 60px;*/
+    border: 4px solid;
+    margin-bottom: 20px;
+}
+
+.button-type-1 img {
+    margin: 5px 12px 0 0;
+    float: left;
+    height: 35px;
+}
+
+.button-type-1 strong {
+    font-weight: 900;
+    font-size: 18px;
+    display: block;
+    margin: 0;
+}
+
+.button-type-1 em {
+    font-weight: 400;
+    font-size: 10px;
+    display: block;
+}
+
+.button-type-1 a {
+    color: #333333;
+    display: block;
+    padding: 5px;
+}
+
+.button-type-1 a:hover {
+    text-decoration: none;
+}
+
+/** .button-type-2 **/
+
+.button-type-2 {
+    background-color: #eceff0;
+    height: 130px;
+    padding: 15px 30px 15px 30px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.button-type-2 img {
+    display: block;
+    margin: auto;
+}
+
+.button-type-2 strong {
+    font-weight: 900;
+    font-size: 18px;
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+/** .button-type-3 **/
+
+.button-type-3 {
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 350px;
+    margin: 0 auto; // Pour faire télécharger par le navigateur
+    // les images de survol dès le premier affichage de la page
+    background-image: url(../img/hexagon-bg-blue.svg), url(../img/hexagon-bg-orange.svg);
+}
+
+.button-type-3.button-border-blue {
+    background-image: url(../img/hexagon-border-blue.svg)
+}
+
+.button-type-3.button-border-blue:hover {
+    background-image: url(../img/hexagon-bg-blue.svg);
+    background-color: transparent;
+}
+
+.button-type-3.button-border-orange {
+    background-image: url(../img/hexagon-border-orange.svg)
+}
+
+.button-type-3.button-border-orange:hover {
+    background-image: url(../img/hexagon-bg-orange.svg);
+    background-color: transparent;
+}
+
+.button-type-3 a {
+    display: block;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    color: #000000;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 40%;
+    padding: 150px 20px;
+}
+
+.button-type-3:hover a,
+.button-type-3 a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button-type-3 strong {
+    font-size: 130%;
+}
+
+@media (max-width: 630px) {
+    .button-type-3 {
+        width: 150px;
+        height: 200px;
+    }
+    .button-type-3 a {
+        height: 180px;
+        background-size: 20%;
+        padding: 35px 5px;
+    }
+}
+
+/** COULEURS DES BLOCS **/
+
+/** Bordures **/
+
+.button-border-blue {
+    border-color: rgba(57, 57, 142, 1);
+}
+
+.button-border-blue:hover {
+    background-color: rgb(46, 46, 92);
+}
+
+.button-border-orange {
+    border-color: rgba(216, 103, 46, 1);
+}
+
+.button-border-orange:hover {
+    background-color: rgb(169, 85, 41);
+}
+
+.button-border-blue:hover a,
+.button-border-blue a:hover,
+.button-border-orange:hover a,
+.button-border-orange a:hover {
+    color: #ffffff;
+}
+
+/** Ombres **/
+
+.button-shadow {
+    border: #ffffff;
+    background-color: #eceff0;
+    height: 130px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+
+.button-shadow img,
+.button-shadow strong,
+.button-shadow p {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    display: inherit;
+}
+
+.button-shadow img {
+    height: 40px;
+    min-width: initial;
+}
+
+.button-shadow-blue {
+    box-shadow: 4px 5px 0px 1px rgba(57, 57, 142, 1);
+}
+
+.button-shadow-orange {
+    box-shadow: 4px 5px 0px 1px rgba(57, 57, 142, 1);
+}
+
+@media(max-width: 767px) {
+    .button-shadow {
+        border: #ffffff;
+        background-color: #eceff0;
+        height: 130px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0 0;
+        box-shadow: none;
+    }
+}

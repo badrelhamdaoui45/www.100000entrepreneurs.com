@@ -1,0 +1,180 @@
+/** SLIDER ACTU **/
+
+.wrapper .container {
+    position: relative;
+}
+
+.slider .slide {
+    position: relative;
+    background-color: rgba(47, 51, 52, 0.95);
+    height: 310px;
+}
+
+@media(max-width: 767px) {
+    .slider .slide {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+.slider .slide .background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .slide .container {
+    opacity: 1;
+}
+
+.slider figure {
+    position: relative;
+    margin: 40px 0 0 0;
+    display: inline-block;
+}
+
+@media(max-width: 767px) {
+    .slider figure {
+        display: none;
+    }
+}
+
+.slider figure img {
+    height: auto;
+    margin: 0 20px 0 0;
+    opacity: 0.7;
+}
+
+.slider span {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: rgba(102, 102, 101, 0.77);
+    color: #ffffff;
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+}
+
+.slider .slider-texte {
+    /*width: 40%;*/
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px 0 0 0;
+}
+
+.slider h2 {
+    margin: 0 0 10px 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+    height: 46px;
+    overflow: hidden;
+}
+
+.slider p {
+    font-size: 14px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.slider a {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 25px;
+    background-color: rgba(216, 103, 46, 1);
+    margin: 15px 0 0 0;
+    display: inline-block;
+}
+
+.slider a:hover,
+.slider a:focus {
+    text-decoration: none;
+    background-color: rgb(174, 86, 39);
+}
+
+.controls #controls-pager .bx-pager .bx-pager-item a {
+    width: 118px;
+    border-radius: 0;
+    height: 8px;
+    background-color: #0089c8;
+    transition: 0.1s all ease;
+}
+
+/**AGENDA**/
+
+.wrapper .agenda {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 310px;
+    z-index: 99;
+    background-color: rgba(49, 51, 52, 0.85);
+    padding: 20px 10px 20px 10px;
+}
+
+@media(max-width: 991px) {
+    .wrapper .agenda {
+        position: relative;
+    }
+}
+
+.wrapper .agenda h2 {
+    font-weight: 900;
+    font-size: 22px;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.wrapper .agenda div {
+    height: 73px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0;
+    position: relative;
+    margin: 0 0 13px 0;
+    width: 100%;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.wrapper .agenda .agenda-button {
+    content: " ";
+    width: 25px;
+    height: 13px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper .agenda .agenda-button-link {
+    background-image: url("../images/polygone-agenda.png");
+}
+
+.wrapper .agenda .agenda-button-nolink {
+    background-image: url("../images/polygone-agenda-nolink.png");
+}
+
+.wrapper .agenda span {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.wrapper .agenda p {
+    color: #585d5f;
+    margin: 0;
+    font-size: 12px;
+}
+
+.wrapper .agenda a:hover,
+.wrapper .agenda a:focus {
+    text-decoration: none;
+}

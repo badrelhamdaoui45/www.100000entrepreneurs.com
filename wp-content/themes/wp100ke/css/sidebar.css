@@ -1,0 +1,25 @@
+/** SIDEBAR **/
+
+.secondary h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 40px 0 10px 0;
+}
+
+.secondary a {
+    color: #333333;
+}
+
+/** CATÉGORIES **/
+
+.secondary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.secondary ul li {
+    font-size: 12px;
+}
+
+/** TAGS **/

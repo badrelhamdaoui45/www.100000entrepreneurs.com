@@ -1,0 +1,221 @@
+/* 
+    Created on : 28 juil. 2015, 18:40:34
+    Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+**/
+
+/** NUMBER & LABEL **/
+
+.number {
+    padding: 5px 0;
+    position: relative;
+}
+
+.number.total {
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.number span {
+    display: block;
+}
+
+.number .number_label {
+    font-size: 115%;
+    line-height: 90%;
+    color: #626c70;
+}
+
+.number .number_number {
+    font-size: 200%;
+    line-height: 90%;
+}
+
+.number.total .number_label {
+    font-size: 110%;
+}
+
+.number.total .number_number {
+    font-size: 300%;
+    line-height: 100%;
+}
+
+/** ALIGNMENT **/
+
+.number.total span {
+    text-align: center;
+}
+
+.number.number-left span {
+    text-align: left;
+    padding: 0 0 0 25px;
+}
+
+.number.number-right span {
+    text-align: right;
+    padding: 0 25px 0 0;
+}
+
+/** TOTAL **/
+
+.number.total {
+    background-color: #eceff0;
+    height: 78px;
+    overflow: hidden;
+}
+
+.number.total:before,
+.number.total:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+
+.number.total:before {
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 39px 0 39px 25px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.number.total:after {
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 39px 25px 39px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+/** COLOR **/
+
+.number.number-left:before,
+.number.number-right:after {
+    content: '';
+    background: no-repeat;
+    width: 20px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+}
+
+.number.number-left:before {
+    left: 0;
+}
+
+.number.number-right:after {
+    right: 0;
+}
+
+/** RED **/
+
+.number.number-red {
+    color: #932300;
+}
+
+.number.number-left.number-red:before {
+    background-image: url(../img/icon-arrow-left-red.svg);
+}
+
+.number.number-right.number-red:after {
+    background-image: url(../img/icon-arrow-right-red.svg);
+}
+
+/** GREEN **/
+
+.number.number-green {
+    color: #008009;
+}
+
+.number.number-left.number-green:before {
+    background-image: url(../img/icon-arrow-left-green.svg);
+}
+
+.number.number-right.number-green:after {
+    background-image: url(../img/icon-arrow-right-green.svg);
+}
+
+/** DARK BLUE **/
+
+.number.number-darkblue {
+    color: #005388;
+}
+
+.number.number-left.number-darkblue:before {
+    background-image: url(../img/icon-arrow-left-darkblue.svg);
+}
+
+.number.number-right.number-darkblue:after {
+    background-image: url(../img/icon-arrow-right-darkblue.svg);
+}
+
+/** LIGHT BLUE **/
+
+.number.number-lightblue {
+    color: #0089c8;
+}
+
+.number.number-left.number-lightblue:before {
+    background-image: url(../img/icon-arrow-left-lightblue.svg);
+}
+
+.number.number-right.number-lightblue:after {
+    background-image: url(../img/icon-arrow-right-lightblue.svg);
+}
+
+/** YELLOW **/
+
+.number.number-yellow {
+    color: #d4a500;
+}
+
+.number.number-left.number-yellow:before {
+    background-image: url(../img/icon-arrow-left-yellow.svg);
+}
+
+.number.number-right.number-yellow:after {
+    background-image: url(../img/icon-arrow-right-yellow.svg);
+}
+
+/** ORANGE **/
+
+.number.number-orange {
+    color: rgba(216, 103, 46, 1);
+}
+
+.number.number-left.number-orange:before {
+    background-image: url(../img/icon-arrow-left-orange.svg);
+}
+
+.number.number-right.number-orange:after {
+    background-image: url(../img/icon-arrow-right-orange.svg);
+}
+
+/** DARK ORANGE **/
+
+.number.number-darkorange {
+    color: rgb(148, 74, 34);
+}
+
+.number.number-left.number-darkorange:before {
+    background-image: url(../img/icon-arrow-left-darkorange.svg);
+}
+
+.number.number-right.number-darkorange:after {
+    background-image: url(../img/icon-arrow-right-darkorange.svg);
+}
+
+/** BLACK **/
+
+.number.number-black {
+    color: #000000;
+}
+
+.number.number-left.number-black:before {
+    background-image: url(../img/icon-arrow-left-black.svg);
+}
+
+.number.number-right.number-black:after {
+    background-image: url(../img/icon-arrow-right-black.svg);
+}

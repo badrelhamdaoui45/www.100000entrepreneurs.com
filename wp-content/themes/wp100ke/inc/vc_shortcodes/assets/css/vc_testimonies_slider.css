@@ -1,0 +1,172 @@
+/**
+ * Created on : 29 juin 2015, 15:17:58
+ * Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+**/
+
+/** SLIDER TÉMOIGNAGES **/
+
+/** .testimony **/
+
+.slider-testimonials .testimony {
+    position: relative;
+}
+
+.slider-testimonials .testimony h4 {
+    font-size: 27px;
+}
+
+.slider-testimonials .testimony .testimony-text {
+    background-color: #eceff0;
+    margin: 0 0 5px 0;
+    padding: 15px 10px 15px 10px;
+    font-size: 100%;
+    color: #585d5f;
+    font-style: italic;
+}
+
+.slider-testimonials .testimony .testimony-text p:before {
+    content: "« ";
+}
+
+.slider-testimonials .testimony .testimony-text p:after {
+    content: " »";
+}
+
+.slider-testimonials .testimony .testimony-text p {
+    margin: 0;
+}
+
+/** Testimony category **/
+
+.slider-testimonials .testimony-entrepreneur,
+.slider-testimonials .testimony-young {
+    margin: 0 40px 0 0;
+}
+
+.slider-testimonials .testimony-entrepreneur h4,
+.slider-testimonials .testimony-young h4 {
+    margin: 30px 0 5px 10px;
+}
+
+.slider-testimonials .testimony-teacher {
+    margin: 0 0 0 40px;
+}
+
+.slider-testimonials .testimony-teacher h4 {
+    text-align: right;
+    margin: 30px 10px 5px 0;
+}
+
+@media(max-width: 992px) {
+    .slider-testimonials .testimony-entrepreneur,
+    .slider-testimonials .testimony-teacher,
+    .slider-testimonials .testimony-young {
+        margin: 0;
+    }
+}
+
+/** .testimony-category .testimony-text after **/
+
+.slider-testimonials .testimony-text:after {
+    width: 0;
+    height: 0;
+    content: "";
+    border-style: solid;
+    position: absolute;
+    bottom: 5px;
+}
+
+@media(max-width: 992px) {
+    .slider-testimonials .testimony-text:after {
+        display: none;
+    }
+}
+
+.slider-testimonials .testimony-entrepreneur .testimony-text:after {
+    border-width: 0 30px 20px 0;
+    border-color: transparent #eceff0 transparent transparent;
+    left: 40px;
+}
+
+.slider-testimonials .testimony-teacher .testimony-text:after {
+    border-width: 20px 30px 0 0;
+    border-color: #eceff0 transparent transparent transparent;
+    right: 40px;
+}
+
+.slider-testimonials .testimony-young .testimony-text:after {
+    border-width: 0 30px 20px 0;
+    border-color: transparent #eceff0 transparent transparent;
+    left: 190px;
+}
+
+/** .testimony-signature **/
+
+.slider-testimonials .testimony .testimony-signature {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.slider-testimonials .testimony .testimony-signature strong {
+    font-weight: 700;
+}
+
+.slider-testimonials .testimony-entrepreneur .testimony-signature {
+    margin: 0 0 0 80px;
+}
+
+.slider-testimonials .testimony-teacher .testimony-signature {
+    margin: 0 80px 0 0;
+    text-align: right;
+}
+
+.slider-testimonials .testimony-young .testimony-signature {
+    margin: 0 0 0 230px;
+}
+
+@media(max-width: 992px) {
+    .testimony-signature {
+        margin: 0 !important;
+    }
+}
+
+/** Flèches **/
+
+.testimonials-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+@media(max-width: 992px) {
+    .testimonials-controls {
+        display: none;
+    }
+}
+
+.testimonials-controls #controls-prev {
+    position: absolute;
+    left: -42px;
+}
+
+.testimonials-controls #controls-next {
+    position: absolute;
+    right: -50px;
+}
+
+.testimonials-controls #controls-prev a,
+.testimonials-controls #controls-next a {
+    text-indent: -9000px;
+    display: block;
+    height: 60px;
+    width: 35px;
+    background-repeat: no-repeat;
+}
+
+.testimonials-controls #controls-prev a {
+    background-image: url("../img/slider-temoignages-arrow-left.png");
+}
+
+.testimonials-controls #controls-next a {
+    background-image: url("../img/slider-temoignages-arrow-right.png");
+}

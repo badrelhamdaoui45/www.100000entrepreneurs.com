@@ -1,0 +1,151 @@
+/**
+ * Created on : 29 juin 2015, 15:17:58
+ * Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+**/
+
+/** ÉTAPES **/
+
+.etapes .etapes-menu {
+    border: none;
+    counter-reset: onglet;
+}
+
+.etapes .etapes-menu li {
+    height: 70px;
+    width: 25%;
+    font-size: 100%;
+    counter-increment: onglet;
+}
+
+.etapes .etapes-menu a {
+    border: none !important;
+    color: #626c70 !important;
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    display: table-cell;
+    height: 70px;
+    min-width: 100%;
+    border-radius: 0;
+    padding: 0 0 0 60px;
+    background-image: url("../img/etapes-menu-normal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.etapes .etapes-menu a:hover {
+    background-image: url("../img/etapes-menu-active.png");
+    background-color: transparent;
+    color: #FFFFFF !important;
+}
+
+.etapes .etapes-menu li a:before {
+    content: "0" counter(onglet) ". ";
+    color: #626c70 !important;
+    font-size: 100%;
+    position: absolute;
+    z-index: 9;
+    top: 23px;
+    left: 25px;
+}
+
+.etapes .etapes-menu li:hover a:before,
+.etapes .etapes-menu li.active a:before {
+    color: #FFFFFF !important;
+}
+
+.etapes .etapes-menu li.active a {
+    color: #FFFFFF !important;
+    background-image: url("../img/etapes-menu-active.png");
+}
+
+.etapes .etapes-menu li:first-child a {
+    background-image: url("../img/etapes-menu-first.png");
+}
+
+.etapes .etapes-menu li:first-child.active a,
+.etapes .etapes-menu li:first-child a:hover {
+    background-image: url("../img/etapes-menu-first-active.png");
+}
+
+@media(max-width: 992px) {
+    .etapes .etapes-menu li a,
+    .etapes .etapes-menu li:first-child a,
+    .etapes .etapes-menu li.active a,
+    .etapes .etapes-menu li a:hover,
+    .etapes .etapes-menu li:first-child.active a {
+        background-image: none;
+        background-color: #eceff0;
+    }
+    .etapes .etapes-menu li.active a,
+    .etapes .etapes-menu li a:hover,
+    .etapes .etapes-menu li:first-child.active a {
+        background-color: #00c89b;
+    }
+}
+
+@media(max-width: 737px) {
+    .etapes .etapes-menu li {
+        width: 50% !important;
+    }
+}
+
+@media(max-width: 500px) {
+    .etapes .etapes-menu li {
+        width: 100% !important;
+    }
+}
+
+/** .etapes .etapes-nav-bottom **/
+
+.etapes .etapes-nav-bottom {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.etapes .etapes-nav-bottom li {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 20px;
+}
+
+.etapes .etapes-nav-bottom li a {
+    font-size: 14px;
+    color: #626c70;
+    display: block;
+    text-align: center;
+}
+
+.etapes .etapes-nav-bottom li a:hover,
+.etapes .etapes-nav-bottom li a:focus {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.etapes .etapes-nav-bottom li.disabled {
+    visibility: hidden;
+}
+
+.etapes .etapes-nav-bottom span {
+    width: 24px;
+    height: 20px;
+    content: " ";
+    display: inline-block;
+    background-image: url("../img/polygone-vert.png");
+    background-repeat: no-repeat;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.etapes .etapes-nav-bottom-left {
+    background-image: url("../img/etapes-arrow-left.png");
+}
+
+.etapes .etapes-nav-bottom-right {
+    background-image: url("../img/etapes-arrow-right.png");
+}

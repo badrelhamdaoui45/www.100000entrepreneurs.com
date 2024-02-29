@@ -1,0 +1,41 @@
+/**
+ * Created on : 02 juillet 2015, 20:44:48
+ * Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+**/
+
+.header-social {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.header-social:hover {
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.header-social.header-facebook {
+    background-color: #627AAD;
+}
+
+.header-social.header-twitter {
+    background-color: #0084B4;
+}
+
+.header-social {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.header-social:hover {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}

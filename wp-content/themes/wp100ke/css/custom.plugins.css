@@ -1,0 +1,123 @@
+/* 
+    Created on : 20 févr. 2015, 17:50:46
+    Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+*/
+
+/**BXSLIDER**/
+
+.bx-wrapper .bx-viewport {
+    border: none;
+    box-shadow: none;
+}
+
+#controls-pager {
+    height: 8px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+@media(max-width: 991px) {
+    #controls-pager {
+        display: none;
+    }
+}
+
+.bx-wrapper {
+    margin: 0;
+}
+
+.bx-wrapper .bx-viewport {
+    margin: 0;
+    border: 0;
+    left: 0;
+}
+
+.bx-pager-item {
+    display: inline-block;
+    height: 8px;
+    margin: 0 10px 0 0;
+}
+
+.bx-pager-item a {
+    width: 118px;
+    border-radius: 0;
+    height: 8px;
+    background-color: rgba(57, 57, 142, 1) !important;
+    transition: 0.1s all ease;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.bx-pager-item a.active,
+.bx-pager-item a:hover {
+    background-color: rgba(216, 103, 46, 1);
+    transition: 0.1s all ease;
+}
+
+/** CONTACT FORM **/
+
+span.wpcf7-not-valid-tip {
+    display: none;
+}
+
+/** WIDGET ARCHIVES **/
+
+.widget_archive label {
+    display: none;
+}
+
+.widget_archive select {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+/** MENU SOCIAL **/
+
+.menu-social {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-social li {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.menu-social li:before {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    color: rgba(57, 57, 142, 1) !important;
+    font-size: 20px;
+    z-index: 30;
+}
+
+.menu-social a {
+    content: " ";
+    text-indent: -9999px;
+    text-align: left;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    padding: 20px 20px 20px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 50;
+    position: absolute;
+    left: 0;
+}
+
+/** VISUAL COMPOSER **/
+
+.vc_gitem-zone {
+    background-size: contain !important;
+}
+
+.wpb_wrapper {
+    position: relative;
+}

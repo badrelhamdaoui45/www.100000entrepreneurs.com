@@ -1,0 +1,43 @@
+/**
+ * Created on : 9 juillet 2015, 18:13:08
+ * Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+**/
+
+.fulllist-partner .col-xs-4 {
+    height: 100px;
+}
+
+.fulllist-partner .col-xs-4 img {
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+.fulllist-partner figure {
+    text-align: center;
+}
+
+.fulllist-partner .content {
+    border-left: 1px solid #ededed;
+    padding-left: 20px;
+}
+
+.fulllist-partner .content a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.fulllist-partner .content a:hover,
+.fulllist-partner .content a:active,
+.fulllist-partner .content a:focus {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.fulllist-partner .content h3 {
+    font-weight: normal;
+}
+
+.vc-partnership-controls {
+    top: 45%;
+}

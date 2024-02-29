@@ -1,0 +1,46 @@
+/* 
+    Created on : 20 févr. 2015, 17:50:46
+    Author     : Cyrille de Gourcy <cyrille.degourcy@spyrit.net>
+*/
+
+/** INSCRIPTION À LA NEWSLETTER **/
+
+.newsletter {
+    color: rgba(57, 57, 142, 1);
+    margin: 0;
+}
+
+.newsletter .newsletter-text {
+    margin: 0 0 13px 0;
+    display: block;
+}
+
+.newsletter .newsletter-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.newsletter p:first-child {
+    margin: 0 0 10px 0;
+}
+
+.newsletter img {
+    display: none;
+}
+
+img#mj-w-close-img {
+    width: auto !important;
+}
+
+@media(max-width: 992px) {
+    .newsletter .newsletter-text,
+    .newsletter-title,
+    .don-txt {
+        display: none;
+    }
+    .banner-words {
+        padding: 0 !important;
+    }
+}
